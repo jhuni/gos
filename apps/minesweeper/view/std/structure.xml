@@ -1,0 +1,29 @@
+<view>
+
+<minesweeper args="field">
+	<div class="minesweeper" id="">
+		{$field}
+	</div>
+</minesweeper>
+
+<options args="">
+	<button class="face" id="state"> </button>
+</options>
+
+<field args="field">
+	<div class="minefield" id="field">
+	{$field}
+	</div>
+</field>
+
+<cell args="row col width height">
+	<button class="cell nl" id="{$row},{$col}" style="width: {$width}; height: {$height};">
+	</button>
+</cell>
+
+<clearer args="">
+	<span class="clearer">
+	</span>
+</clearer>
+
+</view>

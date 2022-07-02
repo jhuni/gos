@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- This file is part of the JavaScript OS project -->
+
+<view>
+
+<gnometris args="innerHTML">
+	<div class="gnometris" id="">
+		{$innerHTML}
+	</div>
+</gnometris>
+
+<sidepanel args="">
+
+	<div class="sidepanel">
+		<div style="float: left;">Score:</div><div id="score">0</div>
+		<div style="float: left;">Lines:</div><div id="lines">0</div>
+		<div style="float: left;">Level:</div><div id="level">1</div>
+	</div>
+
+</sidepanel>
+
+<field args="identifier width height field">
+
+	<div class="field" id="field" style="width: {$width}; height: {$height};">
+	{$field}
+	</div>
+
+</field>
+
+<block args="identifier width height">
+
+	<div class="blank0" id="{$identifier}" style="width: {$width}; height: {$height};">
+	</div>
+
+</block>
+
+</view>

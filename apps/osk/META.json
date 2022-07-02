@@ -1,0 +1,24 @@
+
+{
+	
+	"name": "osk",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"CKIT",
+		"GOLDOS.Executable"
+	],
+
+	"build_requires": [
+
+	],
+
+	"provides": [
+		"osk._exe",
+		"osk.controller.main"
+	]
+
+}
+

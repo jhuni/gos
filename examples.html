@@ -1,0 +1,81 @@
+<html>
+
+<head>
+
+<style type="text/css">
+<!--
+
+.subdirectory {
+margin-left: 40px;
+}
+
+//-->
+</style>
+
+<script type="text/javascript" src="./lib/core/JSAN.js"></script>
+
+<script type="text/javascript">
+
+JSAN.addRepository('./lib/core/');
+JSAN.addRepository('./lib/view/');
+
+var tangoDirectory = '<img src="./assets/tango/places/folder.png"></img>';
+var tangoExecutable = '<img src="./assets/tango/mimetypes/application-x-executable.png"></img>';
+
+var getFileExtension = function(fileName) {
+
+	var spaces = fileName.split('.');
+
+	if( spaces.length == 0 ) {
+		return 0;
+	} else {
+		return spaces[spaces.length-1];
+	}
+
+}
+
+var browseDirectory = function(directory, pathToDirectory) {
+
+	var myhtml = '';
+
+	for( i in directory ) {
+		if( i.substr(0,2) != './') {
+			myhtml += (tangoDirectory + i + "<br />");
+			myhtml += ('<div class="subdirectory">');
+			myhtml += browseDirectory(directory[i], pathToDirectory + '/' + i );
+			myhtml += ('</div>');
+		} else {
+			if( getFileExtension(i) == 'js' ) {
+				myhtml += (tangoExecutable + "<span onclick='runExample(\"" + pathToDirectory + '/' + i + "\");'>" + i + "</span><br />");
+			}
+		}
+	}
+
+	return myhtml;
+
+}
+
+var runExample = function(url) {
+	document.body.innerHTML = '';
+	eval(JSAN._loadJSFromUrl(url));
+	run(document.body);
+}
+
+window.onload = function() {
+
+	eval( 'var manifest = ' + JSAN._loadJSFromUrl('./lib/Examples/MANIFEST.json')  );
+	document.body.innerHTML += ("<h1>Examples:</h1>");
+	document.body.innerHTML += browseDirectory(manifest, './lib/Examples');
+
+}
+
+
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<view>
+
+<checkers args="innerHTML">
+	
+	<div class="checkers" id="">
+		{$innerHTML}
+	</div>
+	
+</checkers>
+
+<board args="innerHTML">
+
+	<div class="board" id="board">
+		{$innerHTML}
+	</div>
+
+</board>
+
+<cell args="identifier width height myclass">
+
+	<div id="{$identifier}" class="{$myclass}" style="width: {$width}; height: {$height};">
+	</div>
+
+</cell>
+
+<clearer args="">
+
+	<div class="clearer">
+	</div>
+
+</clearer>
+
+
+</view>

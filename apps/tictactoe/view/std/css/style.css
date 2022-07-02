@@ -1,0 +1,31 @@
+
+.tictactoe .cell {
+
+	float: left;
+	text-align: center;
+	
+	border: 1px solid #000000;
+	background-color: white;
+	color: black;
+	
+}
+
+.tictactoe .disabled {
+
+	float: left;
+	text-align: center;
+
+	border: 1px solid #000000;
+	background-color: #cccccc;
+	color: black;
+
+}
+
+.tictactoe .clearer {
+
+	clear: left;
+	display: block;
+	width: 0px;
+	height: 0px;
+
+}

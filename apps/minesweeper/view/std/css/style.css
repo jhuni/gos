@@ -1,0 +1,64 @@
+.minesweeper {
+	text-align: center;
+}
+
+.minesweeper .cell {
+	text-align: center;
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+.minesweeper .nl {
+	background-color: Highlight;
+}
+
+.minesweeper .focused {
+	border: 1px dotted #880088;
+}
+
+.minesweeper .vlone {
+	color: blue;
+}
+
+.minesweeper .vltwo {
+	color: green;
+}
+
+.minesweeper .vlthree {
+	color: red;
+}
+
+.minesweeper .vlfour {
+	color: #0000aa;
+}
+
+.minesweeper .vlfive {
+	color: #aa0000;
+}
+
+.minesweeper .vlsix {
+	color: #00ffff;
+}
+
+.minesweeper .vlseven {
+	color: black;
+}
+
+.minesweeper .vleight {
+	color: black;
+}
+
+.minesweeper .face {
+	width: 32px;
+	height: 32px;
+	background-color: white;
+}
+
+.minesweeper .clearer {
+	display: block;
+	clear: left;
+}	

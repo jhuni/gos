@@ -1,0 +1,152 @@
+<html>
+<head>
+
+<title>Hello World</title>
+<script type="text/javascript" src="./JSAN.js"></script>
+<script type="text/javascript">
+<!--
+
+JSAN.use('os.shell');
+JSAN.use('os.bash');
+JSAN.use('stdio');
+
+//-->
+</script>
+</script>
+<link href="./style.css" rel="stylesheet" media="screen"></link>
+<script type="text/javascript">
+<!--
+
+var activeTerm;
+var activeCmd = '';
+var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+var numerics = ')!@#$%^&*(';
+var termnumber = 0;
+
+
+window.onload = function(){
+	activeTerm = document.getElementById('term0');
+}
+
+var myexec = function(cmd) {
+
+	alert(cmd);
+
+}
+
+var getKeyNum = function(e) {
+	
+	var keynum;
+
+	if (window.event) {
+		keynum = e.keyCode;
+	} else if(e.which) {
+		keynum = e.which;
+	}
+
+	return keynum;
+
+}
+
+var getKeyChar = function(keynum, shifted) {
+
+	var mychar = '';
+
+	if(keynum >= 48 && keynum <= 57){
+		mychar = keynum - 48;
+
+		if( shifted ) {
+			mychar = numerics.charAt(mychar);
+		}
+	}
+
+	if(keynum >= 65 && keynum <= 90) {
+
+		var alpha = keynum-65;
+		mychar = alphabet.charAt(alpha);
+
+		if( shifted ) {
+			mychar = mychar.toUpperCase();
+		}
+
+	}
+
+	if(keynum >= 96 && keynum <= 105) {
+		mychar = keynum - 96;
+	}
+
+	if( keynum == 32 ) {
+		mychar = ' ';
+	}
+
+	var somekeys = {
+
+		'192': ['`', '~'],
+		'191': ['/',  '?'],
+		'190': ['.',  '>'],
+		'188': [',',  '<'],
+		'59':  [';',  ':'],
+		'222': ['\'', '"'],
+		'219': ['[',  '{'],
+		'221': [']',  '}'],
+		'220': ['\\', '|'],
+		'61':  ['=',  '+'],
+		'109': ['-',  '_']
+
+	};
+
+	if( somekeys[keynum.toString()] ) {
+		var myindex = shifted ? 1: 0;
+		mychar = somekeys[keynum.toString()][myindex];
+	}
+
+	return mychar;
+}
+
+window.onkeydown = function(e) {
+
+	var keynum = getKeyNum(e);
+
+	var shifted = e.shiftKey;
+	var mychar = getKeyChar(keynum, shifted);
+
+	// Backspace:
+	if( keynum == 8 ) {
+		var str = activeTerm.innerHTML;
+		activeTerm.innerHTML = str.substr(0, str.length-1);
+		activeCmd = activeCmd.substr(0,activeCmd.length-1);
+	}
+
+	// Enter:
+	if( keynum == 13 ) {
+		STDOUT = '';
+		os.shell.exec(activeCmd);
+		var next_term = document.getElementById('term' + (termnumber+1).toString());
+		next_term.innerHTML += STDOUT;
+	}
+
+
+	activeCmd += mychar;
+	activeTerm.innerHTML += mychar;
+
+}
+
+
+
+//-->
+</script>
+
+</head>
+<body>
+
+<div class="terminal" style="width: 525px;">
+<div class="term" style="width: 500px; height: 24px;" id="term0">[guest:]$:</div>
+<div class="term" style="width: 500px; height: 24px;" id="term1"></div>
+<div class="term" style="width: 500px; height: 24px;" id="term2"></div>
+<div class="term" style="width: 500px; height: 24px;" id="term3"></div>
+<div class="term" style="width: 500px; height: 24px;" id="term4"></div>
+<div class="term" style="width: 500px; height: 24px;" id="term5"></div>
+</div>
+
+</body>
+</html>

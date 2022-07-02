@@ -1,0 +1,24 @@
+{
+
+	"name": "chess",
+	"version": "1.0",
+	"author": "Jhuni, <jhuni_x@yahoo.com>",
+	"license": "gpl",
+	
+	"requires": [
+		"CKIT",
+		"GOLDOS.Executable",
+		"Shape.Rect",
+		"Shape.LineSegment",
+		"Grid"
+	],
+	
+	"build_requires": [],
+	
+	"provides": [
+		"chess._exe",
+		"chess.model.gamestate",
+		"chess.controller.main"
+	]
+	
+}

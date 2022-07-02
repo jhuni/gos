@@ -1,0 +1,26 @@
+<view>
+
+<mytable args="field">
+
+	<div class="colorlines" id="table">
+		{$field}
+	</div>
+
+</mytable>
+
+<clearer args="">
+
+	<span class="clearer">
+	</span>
+
+</clearer>
+
+<cell args="identifier width height myimg">
+
+	<div class="cell" id="{$identifier}" style="width: {$width}; height: {$height}">
+		{$myimg}
+	</div>
+
+</cell>
+
+</view>

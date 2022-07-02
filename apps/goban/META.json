@@ -1,0 +1,30 @@
+{	
+	"name": "goban",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"GOLDOS.Executable",
+		"CKIT",
+		"tbsize",
+		"coord",
+		"Grid",
+		"Grid.Directions",
+		"Shape.Rect",
+		
+		"Dom.CoordUtils"
+	],
+
+	"build_requires": [
+
+	],
+
+	"provides": [
+		"goban._exe",
+		"goban.controller.main",
+		"goban.model.gamedata"
+	]
+
+}
+

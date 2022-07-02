@@ -1,0 +1,27 @@
+
+{
+	
+	"name": "sudoko",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"CKIT",
+		"Grid",
+		"Grid.Rank",
+		"Grid.CoordMap"
+	],
+
+	"build_requires": [
+
+	],
+
+	"provides": [
+		"sudoko._exe",
+		"sudoko.model.solver",
+		"sudoko.controller.main"
+	]
+
+}
+

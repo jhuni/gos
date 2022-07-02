@@ -1,0 +1,27 @@
+
+{
+	
+	"name": "podviewer",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"CKIT",
+	
+		"YAHOO",
+		"YAHOO.util.StyleSheet",
+		"Pod.HTML"
+	],
+
+	"build_requires": [
+
+	],
+
+	"provides": [
+		"podviewer._exe",
+		"podviewer.controller.main"
+	]
+
+}
+

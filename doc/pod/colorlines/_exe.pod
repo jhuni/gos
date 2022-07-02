@@ -1,0 +1,20 @@
+=head1 NAME
+
+colorlines.exe - this plays colorlines in your web browser.
+
+=head1 DESCRIPTION
+
+Colorlines is a game that was invented by a Russian game company in 1992.
+The goal of the game is to get five in a row, however, this game allows
+you to set it to a hundred in a row if you so desire. In addition
+the normal layout is 9x9, however, you can change it to any value you wish.
+This is part of the Gold Operating System.
+
+=head1 AUTHOR
+
+Jhuni <jhuni_x@yahoo.com>
+
+=head1 COPYRIGHT
+
+GNU General Public License
+

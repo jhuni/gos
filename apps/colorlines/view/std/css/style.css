@@ -1,0 +1,15 @@
+.colorlines .cell {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	float: left;
+	text-align: center;
+}
+
+.colorlines .clearer {
+
+	display: block;
+	width: 0px;
+	height: 0px;
+	clear: left;
+
+}

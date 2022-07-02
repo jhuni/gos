@@ -1,0 +1,3 @@
+If you go about saving a game of minesweeper in Internet Explorer and then you decide to replay the game in Mozilla Firefox then the system will automatically be able to upgrade your view from HTML to Canvas, or if you are Firefox then you go to Internet Explorer it will automatically downgrade you so the game is stored in pure data rather then interface data.
+
+Also you could be in Internet Explorer based HTML and then you can save your session and it will store the pure user interface logic behind each child in the window manager and then you can continue in Mozilla Firefox and everything will be displayed in Canvas based UI.

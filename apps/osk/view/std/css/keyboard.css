@@ -1,0 +1,28 @@
+.osk table {
+	border: 1px solid #000000;
+	empty-cells: show;
+}
+
+.osk table td {
+	background-color: #EEEEEE;
+	color: black;
+	font-family: monospace;
+	font-size: 12px;
+	text-align: center;
+	border-left: 1px solid #000000;
+}
+
+.osk table .blank {
+	background-color: white;
+	border: 0px #000000;
+}
+
+.osk table .selected {
+	background-color: black;
+	color: white;
+}
+
+.osk table .spacebar {
+	background-color: #DDDDDD;
+	color: #DDDDDD;
+}

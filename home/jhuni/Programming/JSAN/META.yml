@@ -1,0 +1,19 @@
+---
+name: JSAN
+version: 0.10
+author:
+  - Casey West <casey@geeknest.com>
+abstract: JavaScript Archive Network
+license: artistic
+build_requires:
+  Test.Simple: 0.11
+provides:
+  JSAN:
+    file: lib/JSAN.js
+    version: 0.10
+generated_by: Module::Build version 0.2701
+keywords:
+  - jsan
+  - use
+  - import
+  - libraries

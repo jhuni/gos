@@ -1,0 +1,47 @@
+=head1 NAME
+
+goban.model.gamedata - deal with gamedata in go.
+
+=head1 DESCRIPTION
+
+This module has everything that it takes to effectively play a
+human vs human go game. This module is seperate from any artificial intelligence
+modules related to go, it merely provides utility functionality to 
+make a human vs human game possible.
+
+=head1 CONSTRUCTOR
+
+=head2 board
+
+This is an array of three possible values: [-1,0,1] where as -1 is a 
+value in which has no unit placed on the board. One and zero are turns.
+
+	[
+    [-1, -1, -1, -1, -1],
+	[-1, -1,  0,  0, -1],
+	[-1,  0,  1,  1,  1],
+	[-1, -1,  1,  1,  0],
+	[-1, -1, -1, -1, -1]
+	]
+
+=head2 turn
+
+This is either one or zero and it is the turn of the game.
+
+=head2 boardSize
+
+This value is the size of the board the game is being played on. This is
+from the size of the grid position.
+
+=head1 METHODS
+
+
+
+=head1 AUTHOR
+
+Jhuni, <jhuni_x@yahoo.com>
+
+=head1 COPYRIGHT
+
+GNU General Public License
+

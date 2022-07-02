@@ -1,0 +1,56 @@
+<svg width="100%" height="100%"
+	xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+	 onload="startup(evt)">
+>
+<script>
+<![CDATA[
+var svgDocument;
+var svgDocument;
+var svgns="http://www.w3.org/2000/svg"
+
+function startup(evt) {
+	O=evt.target
+	svgDocument=O.ownerDocument
+}
+
+var createRect = function(x,y,width,height,fill){
+	var shape = svgDocument.createElementNS(svgns, "rect");
+	shape.setAttributeNS(null, "x", x);
+	shape.setAttributeNS(null, "y", y);
+	shape.setAttributeNS(null, "width",  width);
+	shape.setAttributeNS(null, "height", height);
+	shape.setAttributeNS(null, "fill", fill);
+	return shape;
+};
+
+function test(){
+
+	var elem =  svgDocument.getElementById("buttons");
+
+	for( var y = 0; y < 10; y++ ) {
+		for( var x = 0; x < 10; x++ ) { 
+			var oelem = createRect(x*51,y*51,50,50, "green");
+			var val = (x+","+y).toString();			
+			oelem.onclick = function(e) {
+				alert(val);
+			};
+			svgDocument.documentElement.appendChild(oelem)
+		}
+	}
+
+
+}
+
+//]]>
+</script>
+
+<g id="buttons" onclick="test()">
+
+<rect x="0" y="0" width="50" height="50" fill="#880088"></rect>
+
+</g>
+
+</svg>
+
+

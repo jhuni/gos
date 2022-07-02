@@ -1,0 +1,24 @@
+
+{
+	
+	"name": "filemgr",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"CKIT",
+		"GOLDOS.Executable"
+	],
+
+	"build_requires": [
+
+	],
+
+	"provides": [
+		"filemgr._exe",
+		"filemgr.controller.main"
+	]
+
+}
+

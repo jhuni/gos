@@ -1,0 +1,11 @@
+JSAN.use('GOLDOS.Executable');
+JSAN.use('CKIT');
+JSAN.use('tbsize');
+JSAN.use('coord');
+JSAN.use('Grid');
+JSAN.use('Grid.Directions');
+JSAN.use('Shape.Rect');
+JSAN.use('Dom.CoordUtils');
+JSAN.use('goban._exe');
+JSAN.use('goban.controller.main');
+JSAN.use('goban.model.gamedata');

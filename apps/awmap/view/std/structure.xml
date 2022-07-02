@@ -1,0 +1,52 @@
+<view>
+
+<ribbon args="">
+
+	<div id="ribbon" class="yui-navset">
+	    <ul class="yui-nav">
+		<li class="selected"><a href="#tab1"><em>Home</em></a></li>
+		<li><a href="#tab2"><em>Terrain</em></a></li>
+		<li><a href="#tab3"><em>Units</em></a></li>
+	    </ul>            
+	    <div class="yui-content">
+
+		<div id="hometab">
+			<button>Horizontal Reverse</button>
+			<button>Vertical Reverse</button>
+			<button id="savecom">Save</button>
+			<button id="exportcom">Export</button>
+		</div>
+		
+		<div id="terraintab">
+		
+		</div>
+		
+		<div id="unitstab">
+			<select id="unitselector">
+				<option>Orange Star</option>
+				<option>Blue Moon</option>
+				<option>Green Earth</option>
+				<option>Yellow Comet</option>
+				<option>Black Hole</option>
+				<option>Red Fire</option>
+				<option>Grey Sky</option>
+				<option>Brown Desert</option>
+				<option>Amber Blaze</option>
+				<option>Jade Sun</option>
+				<option>Colbalt Ice</option>
+				<option>Pink Cosmos</option>
+				<option>Teal Galaxy</option>
+				<option>Purple Lightning</option>
+			</select>
+
+			<div id="unitnav">
+
+			</div>
+		</div>
+
+	    </div>
+	</div>	
+
+</ribbon>
+
+</view>

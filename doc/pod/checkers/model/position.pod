@@ -1,0 +1,41 @@
+=head1 NAME
+
+checkers.model.position
+
+=head1 SYNOPSIS
+
+=head1 DESCRIPTION
+
+=head1 CONSTRUCTOR
+
+=head2 board
+
+This value is an array of cell_values from 0 to 4.
+ 	
+	[BLANK_SQUARE, PLAYER_ONE, PLAYER_TWO, PLAYER_ONE_KING, PLAYER_TWO_KING]
+
+Any cell_value with a value greater then three is a king of the player
+that is cell_value minus two. You can use (cell_value%2) to find the player
+
+=head2 playerToMove
+
+This value is the player whos turn it is to move. Player one tends to go
+first and he tends to be on the bottom of the board where as player
+two is on the top and goes second.
+
+=head2 gridSize
+
+This is a derivative of the grid board.
+
+=head1 METHODS
+
+=head1 AUTHOR
+
+Jhuni <jhuni_x@yahoo.com>
+
+=head1 COPYRIGHT
+
+GNU General Public license.
+(a copy of the license should have been shipped with this program).
+
+

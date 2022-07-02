@@ -1,0 +1,20 @@
+=pod
+
+=head1 NAME
+
+RangeError - Implement Erorrs In JavaScript
+
+=head1 DESCRIPTION
+
+This class implemenets Errors.
+
+=head1 AUTHOR
+
+Jhuni, <jhuni_x@yahoo.com>
+
+=head1 COPYRIGHT
+
+Public Domain
+
+=cut
+

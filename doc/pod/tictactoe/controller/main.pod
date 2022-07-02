@@ -1,0 +1,25 @@
+var tango = './assets/tango';
+pkg.menu = {
+
+	'File': [
+		{text:'New', icon: tango + '/actions/document-new.png'},
+		{text:'Open', icon: tango + '/actions/document-open.png'},
+		{text:'Save', icon: tango + '/actions/document-save.png'},
+		{text:'Save As', icon: tango + '/actions/document-open.png'},
+		{text:'----'},
+		{text:'Exit', icon: tango + '/actions/system-log-out.png'}
+		],
+
+	'Edit': [
+		{text:'Undo', icon: tango + '/actions/edit-undo.png'},
+		{text:'Redo', icon: tango + '/actions/edit-redo.png'}
+		],
+
+	'Settings': [
+		{text:'Preferences', icon: tango + '/categories/preferences-desktop.png'}
+		],
+
+	'Help': [
+		{text:'About Textedit'}
+		]
+

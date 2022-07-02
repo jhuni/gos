@@ -1,0 +1,36 @@
+=head1 NAME
+
+tictactoe.model.gamedata.ai - a computer that plays tictactoe.
+
+=head1 SYNOPSIS
+
+	var pos = new tictactoe.model.gamedata.ai(
+	[  [0,0,0],
+	   [2,2,1],
+	   [0,0,1]   ],  1, 3);
+	   
+	var mymove = pos.move('5'); // Returns a move from the AI engine.
+
+=head1 DESCRIPTION
+
+This module is for one simple purpose - dealing with tictactoe 
+positions in order to generate a coord based on a certain AI level.
+This module only cares about a single function move() which takes
+a level and returns a move. In addition, gamedata.ai inherits from gamedata.
+
+=head1 METHODS
+
+=head2 move(level)
+
+This is the main method and it simply gets a move by the AI engine.
+
+=head1 AUTHOR
+
+Jhuni <jhuni_x@yahoo.com>
+
+=head1 COPYRIGHT
+GNU General Public license.
+(a copy of the license should have been shipped with this program).
+   
+   
+

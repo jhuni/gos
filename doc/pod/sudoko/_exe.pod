@@ -1,0 +1,19 @@
+=head1 NAME
+
+sudoko.exe - a sudoko interface and engine application
+
+=head1 DESCRIPTION
+
+sudoko.exe runs the sudoko application for the Gold Operating
+system, it uses the standard MVC architecture and it seperates
+the engine into sudoko.model.solver, and the controller
+is sudoko.controller.main.
+
+=head1 AUTHOR
+
+Jhuni, <jhuni_x@yahoo.com>
+
+=head1 COPYRIGHT
+
+GNU General Public License v2.0
+

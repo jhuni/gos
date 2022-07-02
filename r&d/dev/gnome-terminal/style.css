@@ -1,0 +1,22 @@
+/*
+.term {
+
+	background-color: #000000;
+	color: #33D011;
+}
+*/
+
+.terminal {
+
+	border: 1px solid #000000;
+
+}
+
+.term {
+
+	background-color: #ffffff;
+	color: #000000;
+	padding: 0px 10px 0px 10px;
+	font-family: courier, fixed;
+
+}

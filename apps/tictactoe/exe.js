@@ -1,0 +1,12 @@
+JSAN.use('CKIT');
+JSAN.use('coord');
+JSAN.use('tbsize');
+JSAN.use('Grid');
+JSAN.use('Grid.Directions');
+JSAN.use('Grid.Connections');
+JSAN.use('Grid.Rank');
+JSAN.use('Conditionals.Platform');
+JSAN.use('tictactoe._exe');
+JSAN.use('tictactoe.controller.main');
+JSAN.use('tictactoe.model.gamedata');
+JSAN.use('tictactoe.model.gamedata.ai');

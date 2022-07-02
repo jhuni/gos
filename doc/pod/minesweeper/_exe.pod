@@ -1,0 +1,18 @@
+=head1 NAME
+
+minesweeper.exe - a minesweeper game for your web browser.
+
+=head1 DESCRIPTION
+
+This JavaScript based minesweeper game runs in your web browser.
+
+This is part of the Gold Operating System.
+
+=head1 AUTHOR
+
+Jhuni <jhuni_x@yahoo.com>
+
+=head1 COPYRIGHT
+
+GNU General Public License
+

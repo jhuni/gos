@@ -1,0 +1,38 @@
+.checkers {
+
+}
+
+.checkers .board {
+
+}
+
+.checkers .cellp1 {
+	border: 1px solid #000000;
+	float: left;
+	background-color: white;
+}
+
+.checkers .cellp2 {
+	border: 1px solid #000000;
+	float: left;
+	background-color: #eeaa77;
+}
+
+.checkers .cellactive {
+	border: 1px solid #000000;
+	float: left;
+	background-color: #115588;
+}
+
+.checkers .clearer {
+	clear: left;
+	display: block;
+	width: 0px;
+	height: 0px;
+}
+
+.checkers .focused {
+	border: 1px solid #000000;
+	float: left;
+	background-color: #880088;
+}

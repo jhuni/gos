@@ -1,0 +1,121 @@
+=pod
+
+=head1 NAME
+
+String - a class to construct string instances
+
+=head1 SYNOPSIS
+
+	var str = new String("This is a string");
+	var ostr = str.slice(0,5);
+	alert(ostr);
+
+=head1 DESCRIPTION
+
+This is a class that is used to construct String instances where as a String is a essentially an arrangement of Characters.
+
+=head1 METHODS
+
+=head2 Inherited
+
+From Function.prototype:
+apply, call, toSource, toString, valueOf 
+
+From Object.prototype:
+hasOwnProperty, isPrototypeOf, propertyIsEnumerable, unwatch, watch
+
+=head2 charAt(Number index) Returns String
+
+=head2 charCodeAt(Number index) Returns Number
+
+=head2 concat(*@strings) Returns String
+
+=head2 indexOf(String searchString, Number searchStart) returns Number
+
+=head2 lastIndexOf(String searchString, Number searchStart) Returns Number
+
+=head2 localeCompare() Returns Number
+
+=head2 match(Regexp regexp) Returns Array
+
+=head2 quote() Returns String
+
+=head2 replace(String|RegExp separator, String|RegExp replacement) Returns String
+
+	String.prototype.replace = function(seperator, replacement) {
+
+		var isRegExp = seperator.constructor.toSource().indexOf("RegExp") !== -1;
+
+		if( isRegExp ) { 
+			return this.split(seperator).join(replacement);
+		} else {
+			return '';
+		}
+	};
+
+=head2 search(Regexp regexp) Returns Number
+
+=head2 slice(Number startIndex, Number endIndex) Returns String
+
+=head2 split(String|RegExp separator) Returns Array
+
+=head2 substr(Number fromIndex, Number amount) Returns String
+
+=head2 substring(Number index1, Number index2) Returns String
+
+=head2 toLocaleLowerCase() Returns String
+
+=head2 toLocaleUpperCase() Returns String
+
+=head2 toLowerCase() Returns String
+
+=head2 toUpperCase() Returns String
+
+=head2 toSource() Returns String
+
+=head2 toString() Returns String
+
+=head2 trim() Returns String
+
+=head2 trimLeft() Returns String
+
+=head2 trimRight() Returns String
+
+=head2 valueOf() Returns String
+
+=head1 HTML WRAPPERS
+
+=head2 anchor(String href) Returns String
+
+=head2 bold() Returns String
+
+=head2 big() Returns String
+
+=head2 blink() Returns String
+
+=head2 fixed() Returns String
+
+=head2 fontcolor() Returns String
+
+=head2 fontsize() Returns String
+
+=head2 italics() Returns String
+
+=head2 small() Returns String
+
+=head2 strike() Returns String
+
+=head2 sub() Returns String
+
+=head2 sup() Returns String
+
+=head1 AUTHOR
+
+Jhuni, <jhuni_x@yahoo.com>
+
+=head1 COPYRIGHT
+
+Public Domain
+
+=cut
+

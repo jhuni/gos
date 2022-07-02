@@ -1,0 +1,31 @@
+{
+	
+	"name": "gnometris",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"CKIT",
+		"coord",
+		"tbsize",
+		"Grid",
+		"Grid.Transformations",
+		"Grid.Rank",
+		
+		"YAHOO",
+		"YAHOO.util.StyleSheet"
+	],
+
+	"build_requires": [
+
+	],
+
+	"provides": [
+		"gnometris._exe",
+		"gnometris.controller.main",
+		"gnometris.model.shapes",
+		"gnometris.model.gamestate"
+	]
+
+}

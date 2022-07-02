@@ -1,0 +1,32 @@
+
+{
+	
+	"name": "wm",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"CKIT",
+		"Conditionals.Platform",
+		"Grid",
+		"Shape.Rect",
+		
+		"Widget.DND",
+		"DOM.CoordUtils",
+		"YAHOO",
+		"YAHOO.util.StyleSheet",
+		"QEvent"
+	],
+
+	"build_requires": [
+
+	],
+
+	"provides": [
+		"wm._exe",
+		"wm.controller.main"
+	]
+
+}
+

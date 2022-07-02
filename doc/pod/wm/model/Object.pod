@@ -1,0 +1,37 @@
+=head1 NAME
+
+Object - the core of all JavaScript classes.
+
+=head1 SYNOPSIS
+
+	var x = new Object(); // constructed
+	var y = {}; // literal
+	
+=head1 DESCRIPTION
+
+In JavaScript, every single value is inherited from the Object class. It is the last thing in the __proto__ chain.
+
+=head1 METHODS
+
+=head2 hasOwnProperty(String prop) Returns Boolean
+
+=head2 isPrototypeOf(Object object) Returns Boolean
+
+=head2 propertyIsEnumerable(String prop) Returns Boolean
+
+=head2 toSource() Returns String
+
+=head2 toLocaleString() Returns String
+
+=head2 toString() Returns String
+
+=head2 valueOf() Returns Object
+
+=head1 AUTHOR
+
+Jhuni, <jhuni_x@yahoo.com>
+
+=head1 COPYRIGHT
+
+Public Domain
+

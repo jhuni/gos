@@ -1,0 +1,18 @@
+=head1 NAME
+
+tictactoe.exe - a tictactoe game.
+
+=head1 DESCRIPTION
+
+This application plays the game tictactoe.
+
+This is part of the Gold Operating System.
+
+=head1 AUTHOR
+
+Jhuni <jhuni_x@yahoo.com>
+
+=head1 COPYRIGHT
+
+Gnu General Public License
+

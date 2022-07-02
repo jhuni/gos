@@ -1,0 +1,83 @@
+<html>
+ <head>
+<script type="text/javascript">
+
+window.button1 = {};
+
+function draw() {
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+
+	ctx.fillStyle = "rgb(200,0,0)";
+	ctx.fillRect (10, 10, 50, 50);
+ctx.translate(10, 50);
+ctx.fillStyle = "white";
+ctx.mozDrawText("Hello");
+
+
+	
+}
+
+function isInPos(x,y) {
+
+	if( x < 60 && x > 10 ) {
+		if( y < 60 && y > 10 ) {
+			return true;
+		}
+	}
+
+	return false;
+
+}
+
+function myfunction(e) {
+	
+	if( isInPos(e.pageX, e.pageY) ) {
+		command();
+	}	
+}
+
+function highlight(e) {
+
+	if( isInPos(e.pageX, e.pageY) ) {
+
+		if( window.button1.state != 'active' ) {
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+
+			ctx.fillStyle = "rgb(0,0,200)";
+			ctx.fillRect (10, 10, 50, 50);
+			window.button1.state = 'active';
+		}
+
+	} else {
+	
+		if( window.button1.state == 'active' ) {
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+
+			ctx.fillStyle = "rgb(200,0,0)";
+			ctx.fillRect (10, 10, 50, 50);
+			window.button1.state = 'inactive';
+		}
+
+
+	}
+
+}
+
+function command() {
+
+	alert('you fail!');
+
+}
+
+
+
+</script>
+ </head>
+ <body onload="draw()" style="margin: 0px; padding: 0px;" onclick="myfunction(event);" onmousemove="highlight(event);">
+   <canvas id="canvas" width="500" height="500"></canvas>
+ </body>
+</html>
+

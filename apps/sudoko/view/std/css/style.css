@@ -1,0 +1,15 @@
+.sudoko .cell {
+	border: 1px solid #000000;
+	float: left;
+	font-size: 30px;
+	text-align: center;
+}
+
+.clearer {
+	clear: left;
+}
+
+.block {
+	border: 4px groove #000000;
+	float: left;
+}

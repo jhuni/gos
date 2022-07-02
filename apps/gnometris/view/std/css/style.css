@@ -1,0 +1,49 @@
+.gnometris .field {
+	float: left;
+	border: 1px solid #000000;
+	background-color: #ffffff;
+}
+
+.gnometris .sidepanel {
+	float: left;
+	width: 100px;
+	padding: 20px;
+}
+
+.gnometris .field div {
+	float: left;
+	border: 1px solid #000000;
+}
+
+.gnometris .blockblank {
+	background-color: white;
+}
+
+.gnometris .block0 {
+	background-color: cyan;
+}
+
+.gnometris .block1 {
+	background-color: blue;
+}
+
+.gnometris .block2 {
+	background-color: orange;
+}
+
+.gnometris .block3 {
+	background-color: yellow;
+}
+
+.gnometris .block4 {
+	background-color: green;
+}
+
+.gnometris .block5 {
+	background-color: purple;
+}
+
+.gnometris .block6 {
+	background-color: red;
+}	
+

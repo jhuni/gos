@@ -1,0 +1,30 @@
+{
+	
+	"name": "tictactoe",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"CKIT",
+		"coord",
+		"tbsize",
+		"Grid",
+		"Grid.Directions",
+		"Grid.Connections",
+		"Grid.Rank",
+		"Conditionals.Platform"
+	],
+
+	"build_requires": [
+
+	],
+
+	"provides": [
+		"tictactoe._exe",
+		"tictactoe.controller.main",
+		"tictactoe.model.gamedata",
+		"tictactoe.model.gamedata.ai"
+	]
+
+}

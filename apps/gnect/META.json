@@ -1,0 +1,29 @@
+{
+	
+	"name": "gnect",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"CKIT",
+		"GOLDOS.Executable",
+		"Canvas.GridDrawer",
+		"Canvas.Image",
+		"Grid",
+		"Dom.CoordUtils",
+		"Grid.Connections"
+	],
+
+	"build_requires": [
+
+	],
+
+	"provides": [
+		"gnect._exe",
+		"gnect.controller.main",
+		"gnect.model.gamestate"
+	]
+
+}
+

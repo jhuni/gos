@@ -1,0 +1,26 @@
+{
+	
+	"name": "minesweeper",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"CKIT",
+		"Grid",
+		"Grid.Directions",
+		
+		"YAHOO",
+		"YAHOO.util.StyleSheet"
+	],
+
+	"build_requires": [],
+
+	"provides": [
+		"minesweeper._exe",
+		"minesweeper.controller.main",
+		"minesweeper.model.minefield",
+		"minesweeper.model.gamestate"
+	]
+
+}

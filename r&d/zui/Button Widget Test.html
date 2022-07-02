@@ -1,0 +1,164 @@
+<html>
+
+<head>
+
+<title>Canvas Test</title>
+
+<script type="text/javascript">
+<!--
+
+/* Button Object */
+var Button = function() {
+	this.value = '';
+	this.y = 10;
+	this.x = 10;
+	this.width = 70;
+	this.height = 30;
+	this.__drawn__ = false;
+	this.backgroundColor = "#EEEEEE";
+	this.color = "#000000";
+	
+	this.zoom = 3.5;
+};
+
+Button.prototype = {
+	
+	containsCoord: function(x,y) {
+		return( x > this.x && x < (this.x+this.width) && y > this.y && y < (this.y+this.height) );
+	},
+	
+	appendTo: function(ctx) {
+		this.ctx = ctx;
+		this.draw();
+	},
+
+	draw: function() {
+
+		var ctx = this.ctx;
+
+		ctx.save();
+		
+		// Set Variables:
+		ctx.strokeStyle = "#888888";
+		ctx.fillStyle = this.backgroundColor;
+		ctx.lineWidth = '4';
+		ctx.scale(this.zoom,this.zoom);
+		ctx.translate(this.x,this.y);
+
+		ctx.beginPath();
+		ctx.rect(4,4,this.width-8,this.height-8);	
+		ctx.stroke();
+		ctx.fill();
+
+		ctx.fillStyle = this.color;
+		ctx.translate(18,20);
+		ctx.mozDrawText(this.value);
+		
+		ctx.restore();
+	
+		this.__drawn__ = true;
+
+	},
+
+	set: function(key, value) {	
+		
+		if( this.__drawn__ ) {
+			this.ctx.clearRect(this.x*this.zoom,this.y*this.zoom,this.width*this.zoom,this.height*this.zoom);
+			this[key] = value;
+			this.draw();
+		} else {
+			this[key] = value;
+		}
+
+	},
+	
+	onmousedown: function() {
+		if( this['color'] == 'white' ) {
+			this.set('color', 'black');
+			this.set('backgroundColor', '#EEEEEE');	
+		} else {
+			this.set('color', 'white');
+			this.set('backgroundColor', 'black');	
+		}
+	}
+
+};
+
+
+
+
+var Content = {
+
+	zoom: 1,
+
+	display: function(ctx) {
+	
+		this.b1 = new Button();
+		this.b1.set('value', 'Info');
+		this.b1.appendTo(ctx);
+		
+		this.b2 = new Button();
+		this.b2.set('value', 'Test');
+		this.b2.set('x', 50);
+		this.b2.set('y', 50);
+		this.b2.appendTo(ctx);
+		
+		this.b3 = new Button();
+		this.b3.set('value', 'Data Button');
+		this.b3.set('x', 150);
+		this.b3.set('y', 100);
+		this.b3.set('height',40);
+		this.b3.set('width',100);
+		this.b3.appendTo(ctx);
+	
+	}
+	
+};
+
+
+window.onload = function() {
+
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	
+	Content.display(ctx);
+	
+	canvas.onclick = function(e) {
+		var x = e.pageX/3.5;
+		var y = e.pageY/3.5;
+	
+		if( Content.b1.containsCoord(x,y) ) {
+			Content.b1.onmousedown();
+		} else if( Content.b2.containsCoord(x,y) ) {
+			Content.b2.onmousedown();
+		} else if( Content.b3.containsCoord(x,y) ) {
+			Content.b3.onmousedown();
+		}
+
+	};
+	
+};
+
+//-->
+</script>
+
+<style type="text/css">
+<!--
+
+body {
+	margin: 0px;
+};
+
+//-->
+</style>
+
+</head>
+
+<body>
+
+Set Zoom: <input type="text" value="2" /><button>ok</button><br/>
+<canvas id="canvas" width="1000" height="800" style="border: 1px solid #000000;"></canvas>
+
+</body>
+
+</html>

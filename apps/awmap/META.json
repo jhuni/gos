@@ -1,0 +1,32 @@
+
+{
+	
+	"name": "awmap",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"CKIT",
+		"GOLDOS.Executable",
+		"coord",
+		"tbsize",
+		"Grid",
+		"Grid.CoordMap",
+		"Grid.Directions"
+	],
+
+	"build_requires": [
+
+	],
+
+	"provides": [
+		"awmap.model.tile",
+		"awmap.model.unit",
+		"awmap.model.map",
+		"awmap._exe",
+		"awmap.controller.main"
+	]
+
+}
+

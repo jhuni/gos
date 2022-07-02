@@ -1,0 +1,18 @@
+=head1 NAME
+
+gnometris.exe - a tetris game licensed under the GPL.
+
+=head1 DESCRIPTION
+
+This game plays tetris in your web browser, it is highly configurable.
+
+This is part of the Gold Operating System.
+
+=head1 AUTHOR
+
+Jhuni <jhuni_x@yahoo.com>
+
+=head1 COPYRIGHT
+
+GNU General Public License
+

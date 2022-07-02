@@ -1,0 +1,27 @@
+<view>
+
+<sudoko args="field">
+	<div class="sudoko" id="">
+		{$field}
+	</div>
+</sudoko>
+
+<position args="field">
+	<div class="positon" id="position">{$field}</div> 
+</position>
+
+<block args="field width">
+	<div class="block" style="width: {$width};">{$field}</div>
+</block>
+
+<cell args="id width height">
+	<div class="cell" id="{$id}" style="width: {$width}; height: {$height};">
+	</div>
+</cell>
+
+<clearer args="">
+	<div class="clearer">
+	</div>
+</clearer>
+
+</view>

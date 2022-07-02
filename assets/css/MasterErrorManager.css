@@ -1,0 +1,29 @@
+.ErrorReport {
+	color: black;
+	background-color: #eeeeee;
+	border: 1px solid #000000;
+	padding: 25px;
+	padding-top: 10px;
+}
+
+.Error {
+	color: #880000;
+	font-size: large;
+}
+
+.FatalMessage {
+	font-size: xx-large;
+	color: red;
+	margin-left: 25px;
+}
+
+.LoadedMessage {
+	margin-right: 25px;
+}
+
+.Section {
+	font-size: x-large;
+	background-color: black;
+	color: white;
+	padding: 10px 25px 10px 25px;
+}

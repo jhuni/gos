@@ -1,0 +1,26 @@
+{
+	
+	"name": "checkers",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"CKIT",
+		"Grid",
+		"Shape.LineSegment",
+		"Shape.Rect"
+	],
+
+	"build_requires": [
+
+	],
+
+	"provides": [
+		"checkers._exe",
+		"checkers.model.piece",
+		"checkers.model.position",
+		"checkers.controller.main"
+	]
+
+}

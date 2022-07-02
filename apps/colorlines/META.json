@@ -1,0 +1,32 @@
+{
+	
+	"name": "colorlines",
+	"version": "1.0",
+	"author": "Jhuni <jhuni_x@yahoo.com>",
+	"license": "gpl",
+
+	"requires": [
+		"CKIT",
+		"coord",
+		"tbsize",
+		"Grid",
+		"Grid.Directions",
+		"Grid.Connections",
+
+		"QEvent",
+		"YAHOO",
+		"YAHOO.util.StyleSheet"
+	],
+
+	"build_requires": [
+
+	],
+
+	"provides": [
+		"colorlines._exe",
+		"colorlines.view.std.controller",
+		"colorlines.model.ImageSettings",
+		"colorlines.controller.main"
+	]
+
+}

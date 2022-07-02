@@ -1,0 +1,12 @@
+JSAN.use('CKIT');
+JSAN.use('GOLDOS.Executable');
+JSAN.use('coord');
+JSAN.use('tbsize');
+JSAN.use('Grid');
+JSAN.use('Grid.CoordMap');
+JSAN.use('Grid.Directions');
+JSAN.use('awmap.model.tile');
+JSAN.use('awmap.model.unit');
+JSAN.use('awmap.model.map');
+JSAN.use('awmap._exe');
+JSAN.use('awmap.controller.main');

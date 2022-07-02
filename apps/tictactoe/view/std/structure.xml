@@ -1,0 +1,25 @@
+<view>
+
+<myfield args="field">
+
+	<div class="tictactoe" id="">
+		{$field}
+	</div>
+
+</myfield>
+
+<clearer args="">
+
+	<span class="clearer">
+	</span>
+
+</clearer>
+
+<cell args="x y width height fontSize">
+
+	<div class="cell" id="{$x},{$y}" style="width: {$width}; height: {$height}; font-size: {$fontSize};">
+	</div>
+
+</cell>
+
+</view>

@@ -1,0 +1,44 @@
+Games:
+---------
+	Checkers:
+		Canvas/HTML
+	
+	Chess:
+		Canvas
+		
+	Colorlines:
+		HTML
+	
+	Gnect:
+		Canvas
+		
+	Gnometris:
+		HTML
+		
+	Goban:
+		Canvas
+		
+	Minesweeper:
+		HTML
+		
+	Sudoko:
+		HTML
+	
+	Tictactoe:
+		Canvas/HTML
+	
+Accessories:
+
+	OSK:
+		HTML
+		
+	podviewer:
+		HTML
+		
+	taskmkgr:
+		HTML
+		
+	wm:
+		HTML
+		
+		

@@ -1,0 +1,10 @@
+JSAN.use('CKIT');
+JSAN.use('GOLDOS.Executable');
+JSAN.use('Canvas.GridDrawer');
+JSAN.use('Canvas.Image');
+JSAN.use('Grid');
+JSAN.use('Dom.CoordUtils');
+JSAN.use('Grid.Connections');
+JSAN.use('gnect._exe');
+JSAN.use('gnect.controller.main');
+JSAN.use('gnect.model.gamestate');

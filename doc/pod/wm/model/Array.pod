@@ -1,0 +1,127 @@
+=pod
+
+=head1 NAME
+
+Array - Class for dealing with ordered arrangements
+
+=head1 SYNOPSIS
+
+	var arr = new Array('element1', 'element2', 'element3');
+	arr.reverse().push();
+
+=head1 DESCRIPTION
+
+Array is a Class for dealing with ordered arrangements of values, do not use this class for a dictionary or a hash.
+
+This is based heavily upon the code released by Mozilla and it is based upon complete compatability with the Mozilla platform, that way existing code will continue to run with this implementation of Array.
+
+=head1 METHODS
+
+=head2 Inherited
+
+From Function.prototype:
+apply, call, toSource, toString, valueOf 
+
+From Object.prototype:
+hasOwnProperty, isPrototypeOf, propertyIsEnumerable, unwatch, watch
+
+=head2 Constructor(*@elements) Returns Array
+
+*** Not Implementable in Standard JavaScript.
+
+This is used to create an Array object. The length property requires a setter so we can not implement Array in pure JavaScript code.
+
+=head2 join(String separator) Returns String
+
+This takes each element of the Array and it adds seperator in between each of the elements to join the Array.
+
+=head2 toString() Returns String
+
+This function will convert an Array to a String.
+
+=head2 toSource() Returns String
+
+This function will convert the Array to source code - such that you can use eval(arr.toSource()).
+
+=head2 reverse() Returns Array
+
+Reverse the order of the arrangement of the Array and return.
+
+=head2 sort(Function compareFunction) Returns undefined
+
+Sorts and modifies the elements of this array.
+
+=head2 pop() Returns Any
+
+This function removes and returns the last element in this Array.
+
+=head2 shift() Returns Any
+
+This removes and returns the first element of the Array.
+
+=head2 push(*@elements) Returns Number
+
+This will push to the end of the array the following *@elements.
+
+=head2 unshift(*@elements) Returns Number
+
+This will push to the beginning of the array the *@elements.
+
+=head2 slice(Number begin, Number end) Returns Array
+
+This returns an Array starting at begin and ending at end.
+
+=head2 concat(*@insertions) Returns Array
+
+This will add a group of other Arrays or Values to the end of this Array, if an Array is passed as an argument its elements become a part of the current Arrays elements.
+
+=head2 splice(Number index, Number howMany, *@insertions) Returns Array
+
+Adds or removes elements from the Array.
+
+=head2 indexOf(Any element, Number from? ) Returns Number
+
+This gets the index of the element.
+
+=head2 lastIndexOf(Any element, Number from?) Returns Number
+
+This returns the last index of the element.
+
+=head2 every(Function fun, Any thisp?) Returns Boolean
+
+This returns true if every single value in the array matches fun().
+
+=head2 filter(Function fun, Any thisp?) Returns Array
+
+This returns a new Array without values that match fun().
+
+=head2 forEach(Function fun, Any thisp?) Returns undefined
+
+This performs a call on each element of the Array.
+
+=head2 map(Function fun, Any thisp?) Returns Array
+
+This returns a new Array with the results of fun() to each element in the Array.
+
+=head2 some(Function fun, Any thisp?) Returns Boolean
+
+This returns true if any element in the Array matches fun().
+
+=head2 reduce( Function fun, Any initialValue? ) Returns Any
+
+Apply fun() against two values of the array (from left-to-right) as to reduce it to a single value and return that value.
+
+=head2 reduceRight( Function fun, Any initialValue? ) Returns Any
+
+Apply fun() against two values of the array (from right-to-left) as to reduce it to a single value and return that value.
+
+=head1 AUTHOR
+
+Jhuni, <jhuni_x@yahoo.com>
+
+=head1 COPYRIGHT
+
+Public Domain
+
+=cut
+
